@@ -88,34 +88,36 @@
         <img id="input_image" style="display: none;">
     </div>
 
-    <div id="resultsDiv" style="display: none;">
-        <h1>Resultados do teste</h1>
-        <div style="margin-top: 40px;">
-            <span class="mainText" style="margin-left: 50px;">Foram encontrados </span>
-            <span id="result">25</span>
-            <span class="mainText"> ovos na imagem.</span>
-        </div>
-
-        <div class="resultsContainer">
-            <div class="imgDiv">
-                <h4 class="imgText">Imagem original</h4>
-                <canvas id="originalImage" style="margin-top: 10px; border: 1px solid #25BFC9; max-width: 250px;"></canvas>
+    <div id="resultsDiv">
+        <div class="divResults">
+            <h1>Resultados do teste</h1>
+            <div style="margin-top: 40px;">
+                <span class="mainText" style="margin-left: 50px;">Foram encontrados </span>
+                <span id="result">25</span>
+                <span class="mainText"> ovos na imagem.</span>
             </div>
-            <div class="imgDiv">
-                <h4 class="imgText">Imagem resultante</h4>
-                <canvas id="outputImage" style="margin-top: 10px; border: 1px solid #25BFC9; max-width: 250px;"></canvas>
+
+            <div class="resultsContainer">
+                <div class="imgDiv">
+                    <h4 class="imgText">Imagem original</h4>
+                    <canvas id="originalImage" style="margin-top: 10px; border: 1px solid #25BFC9; max-width: 250px;"></canvas>
+                </div>
+                <div class="imgDiv">
+                    <h4 class="imgText">Imagem resultante</h4>
+                    <canvas id="outputImage" style="margin-top: 10px; border: 1px solid #25BFC9; max-width: 250px;"></canvas>
+                </div>
             </div>
-        </div>
 
-        <h3>Confira abaixo as imagens geradas durante o processo de identificação e contagem:</h3>
+            <h3>Confira abaixo as imagens geradas durante o processo de identificação e contagem:</h3>
 
-        <div class="imagesContainer">
-            <div class="divImg">
-                <canvas id="sure_bg" class="objectImg"></canvas>
-                <canvas id="distance_transform" class="objectImg"></canvas>
-                <canvas id="sure_fg" class="objectImg"></canvas>
-                <canvas id="unknown" class="objectImg"></canvas>
-                <canvas id="markers" class="objectImg"></canvas>
+            <div class="imagesContainer">
+                <div class="divImg">
+                    <canvas id="sure_bg" class="objectImg"></canvas>
+                    <canvas id="distance_transform" class="objectImg"></canvas>
+                    <canvas id="sure_fg" class="objectImg"></canvas>
+                    <canvas id="unknown" class="objectImg"></canvas>
+                    <canvas id="markers" class="objectImg"></canvas>
+                </div>
             </div>
         </div>
     </div>
