@@ -1,3 +1,17 @@
+@media screen and (max-device-width: 700px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }  
+
+  .divText{
+    max-width: none;
+    min-width: 300px;
+    width: auto;
+    margin-left: 40px;
+  }
+}
+
 h1{
   font-family: Arial, sans-serif;
   margin-top: 45px;
@@ -61,4 +75,11 @@ p{
   border-radius: 10px;
   margin-top: 40px;
   cursor: pointer;
+}
+
+.divText{
+  max-width: 700px; 
+  width: 50%; 
+  margin-top: 20px; 
+  margin-right: 50px;
 }
