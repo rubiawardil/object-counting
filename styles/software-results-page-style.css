@@ -1,0 +1,78 @@
+h1{
+    font-family: Arial, sans-serif;
+    margin-top: 45px;
+    margin-left: 50px;
+    font-size: 24px;
+    color: #595959;
+    font-weight: 400;
+  }
+
+h2{
+    color: #25BFC9;
+}
+
+h3{
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 16px;
+  color: #a0a0a0;
+  font-weight: 500;
+}
+
+h4{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #25BFC9;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.mainText{
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: #595959;
+    font-weight: bold;
+  }
+
+  #result{
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: #25BFC9;
+    font-weight: bold;
+  }
+
+  .resultsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .imgDiv{
+    margin-top: -10px;
+    margin-right: 30px;
+    max-width: 400px;
+  }
+
+  .imagesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 1000px;
+}
+
+.divImg{
+  display: inline-block;
+  max-width: 1000px;
+}
+
+.objectImg{
+  max-width: 250px;
+  border: 1px solid #25BFC9;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

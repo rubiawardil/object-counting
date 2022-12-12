@@ -1,0 +1,64 @@
+h1{
+  font-family: Arial, sans-serif;
+  margin-top: 45px;
+  text-align: center; 
+  font-size: 28px;
+  color: #595959;
+  font-weight: 400;
+}
+
+h2{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #595959;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+h4{
+  font-family: Arial, sans-serif;
+  font-size: 16px; 
+  color: #a0a0a0;
+  font-weight: 300;
+}
+
+p{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 550;
+  margin-right: 10px;
+}
+
+#recbackground{
+  display: flex; 
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  margin-top: 45px;
+  align-self: center;
+  height:auto; 
+  background-color: #F3F3F3; 
+  border:0px solid #000; 
+  border-radius: 15px;
+}
+
+#btnTest{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #25BFC9;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+}

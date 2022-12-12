@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software</title>
+    <link rel="icon" href="/Assets/polygon.svg">
+    <link href="../styles/menustyle.css" rel="stylesheet">
+    <link href="../styles/software-page-style.css" rel="stylesheet">
+    <link href="../styles/software-results-page-style.css" rel="stylesheet">
+    <script src="../scripts/menu-navigation.js"></script>
+    <script async src="../opencv.js"></script>
+    <script async src="../scripts/software-page-script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="slidemenu">
+            <!-- Item 1 -->
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" onclick="navigateHome()"/>
+            <label for="slide-item-1"><span>Home</span></label>
+            
+            <!-- Item 2 -->
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" checked onclick="navigateSoftware()"/>
+            <label for="slide-item-2"><span>Software</span></label>
+            
+            <!-- Item 3 -->
+            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle" onclick="navigateMethodology()"/>
+            <label for="slide-item-3"><span>Metodologia</span></label>
+            
+            <!-- Item 4 -->
+            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle" onclick="navigateImages()"/>
+            <label for="slide-item-4"><span>Imagens</span></label>
+            
+            <div class="clear"></div>
+    
+            <!-- Bar -->
+            <div class="slider">
+                <div class="bar"></div>
+            </div>     
+        </nav>
+    
+        <img class="deviconimg" height="100" src="/Assets/dev-icon.svg">
+    </div>
+
+    <div id="softwareDiv">
+        <h1>Ferramenta disponível para testes</h1>
+        <h3>
+            A aplicação foi criada utlizando computação visual para identificar e contar ovos do mosquito Aedes aegypti.
+        </h3>
+
+        <h3 style="color: rgb(58, 58, 58);"> 
+            Selecione uma das opções:
+        </h3>
+
+        <div class="optionsContainer">
+            <div class="divOption" onclick="document.getElementById('file_input').click()">
+                <input type="file" id="file_input" style="display: none;"/>
+                <button class="btnOption">
+                    <p>Escolher imagem</p>
+                    <img src="/Assets/image.svg" style="width: 25px;">
+                </button>
+            </div>
+            <div class="divOption" onclick="getSimulatedImage()">
+                <button class="btnOption">
+                    <p>Simular imagem</p>
+                    <img src="/Assets/right-arrow.svg" style="width: 25px;">
+                </button>
+            </div>
+        </div>
+
+        <img id="input_image" style="display: none;">
+    </div>
+
+    <div id="resultsDiv" style="display: none;">
+        <h1>Resultados do teste</h1>
+        <div style="margin-top: 40px;">
+            <span class="mainText" style="margin-left: 50px;">Foram encontrados </span>
+            <span id="result">25</span>
+            <span class="mainText"> ovos na imagem.</span>
+        </div>
+
+        <div class="resultsContainer">
+            <div class="imgDiv">
+                <h4 class="imgText">Imagem original</h4>
+                <canvas id="originalImage" style="margin-top: 10px; border: 1px solid #25BFC9; max-width: 250px;"></canvas>
+            </div>
+            <div class="imgDiv">
+                <h4 class="imgText">Imagem resultante</h4>
+                <canvas id="outputImage" style="margin-top: 10px; border: 1px solid #25BFC9; max-width: 250px;"></canvas>
+            </div>
+        </div>
+
+        <h3>Confira abaixo as imagens geradas durante o processo de identificação e contagem:</h3>
+
+        <div class="imagesContainer">
+            <div class="divImg">
+                <canvas id="sure_bg" class="objectImg"></canvas>
+                <canvas id="distance_transform" class="objectImg"></canvas>
+                <canvas id="sure_fg" class="objectImg"></canvas>
+                <canvas id="unknown" class="objectImg"></canvas>
+                <canvas id="markers" class="objectImg"></canvas>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

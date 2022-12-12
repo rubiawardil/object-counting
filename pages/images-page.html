@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="icon" href="/Assets/polygon.svg">
+    <link href="../styles/menustyle.css" rel="stylesheet">
+    <link href="../styles/images-page-style.css" rel="stylesheet">
+    <script src="../scripts/menu-navigation.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="slidemenu">
+            <!-- Item 1 -->
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" onclick="navigateHome()"/>
+            <label for="slide-item-1"><span>Home</span></label>
+            
+            <!-- Item 2 -->
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" onclick="navigateSoftware()"/>
+            <label for="slide-item-2"><span>Software</span></label>
+            
+            <!-- Item 3 -->
+            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle" onclick="navigateMethodology()"/>
+            <label for="slide-item-3"><span>Metodologia</span></label>
+            
+            <!-- Item 4 -->
+            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle" checked onclick="navigateImages()"/>
+            <label for="slide-item-4"><span>Imagens</span></label>
+            
+            <div class="clear"></div>
+    
+            <!-- Bar -->
+            <div class="slider">
+                <div class="bar"></div>
+            </div>     
+        </nav>
+    
+        <img class="deviconimg" height="100" src="/Assets/dev-icon.svg">
+    </div>
+    
+    <h1>Sobre as imagens simuladas</h1>
+
+    <h3>Para facilitar e automatizar os testes do programa, foi criado um script capaz de gerar 
+        imagens simuladas dos ovos do mosquito. São geradas imagens com diversos objetos de cores 
+        e tamanhos iguais, distribuídos por toda a imagem.<br><br>
+        Você pode conferir algumas dessas imagens abaixo:
+    </h3>
+
+    <div class="imgsContainer">
+        <div class="divImg">
+            <img class="objectImg" src="../SimulatedImages/2.jpg">
+            <img class="objectImg" src="../SimulatedImages/98.jpg">
+            <img class="objectImg" src="../SimulatedImages/20.jpg">
+            <img class="objectImg" src="../SimulatedImages/42.jpg">
+            <img class="objectImg" src="../SimulatedImages/103.jpg">
+            <img class="objectImg" src="../SimulatedImages/91.jpg">
+        </div>
+    </div>
+
+</body>
+
+</html>

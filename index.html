@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="/Assets/polygon.svg">
+    <link href="styles/menustyle.css" rel="stylesheet">
+    <link href="styles/homepage-style.css" rel="stylesheet">
+    <script src="scripts/menu-navigation.js"></script>
+</head>
+
+<body>
+    <div id="horizontalMenu" class="container">
+        <nav class="slidemenu">
+            <!-- Item 1 -->
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked onclick="navigateHome()"/>
+            <label for="slide-item-1"><span>Home</span></label>
+            
+            <!-- Item 2 -->
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" onclick="navigateSoftware()"/>
+            <label for="slide-item-2"><span>Software</span></label>
+            
+            <!-- Item 3 -->
+            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle" onclick="navigateMethodology()"/>
+            <label for="slide-item-3"><span>Metodologia</span></label>
+            
+            <!-- Item 4 -->
+            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle" onclick="navigateImages()"/>
+            <label for="slide-item-4"><span>Imagens</span></label>
+            
+            <div class="clear"></div>
+    
+            <!-- Bar -->
+            <div class="slider">
+                <div class="bar"></div>
+            </div>     
+        </nav>
+    
+        <img class="deviconimg" height="100" src="/Assets/dev-icon.svg">
+    </div>
+
+    <div id="dropdownMenu" class="phoneMenuContainer">
+        <button class="menuBtn">
+            <img src="/Assets/menu.svg" style="width: 40px;">
+        </button>
+        <img class="whiteDevIcon" height="50px" src="/Assets/dev-icon-white.svg">
+    </div>
+
+    <div style="max-width: 1800px; margin: 0 auto;">
+        <div style="max-width: 720px; margin: 0 auto;">
+            <h1>Software para automatização da contagem de ovos do vetor da dengue, o mosquito Aedes aegypti
+            </h1>
+        </div>
+    
+        <div id="recbackground">
+            <div style="max-width: 700px; width: 50%; margin-top: 20px; margin-right: 50px;">
+                <h2>Ferramenta criada para a detecção de objetos em imagens, aplicada no reconhecimento de ovos do Ae. aegypti para auxiliar no controle e prevenção da dengue.</h3>
+                <h4>O software ainda está em fase de aprimoramento e funciona com imagens simuladas em condições ideais.</p>
+                <button id="btnTest" onclick="navigateSoftware()">
+                    <p>Testar aplicação</p>
+                    <img src="/Assets/right-arrow.svg" style="width: 25px;">
+                </button>
+            </div>
+            <img src="/Assets/laptop.svg" style="width: 350px; margin-top: 10px;">
+        </div>
+    </div>
+      
+</body>
+
+</html>

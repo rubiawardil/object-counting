@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia</title>
+    <link rel="icon" href="/Assets/polygon.svg">
+    <link href="../styles/menustyle.css" rel="stylesheet">
+    <link href="../styles/methodology-page-style.css" rel="stylesheet">
+    <script src="../scripts/menu-navigation.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="slidemenu">
+            <!-- Item 1 -->
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" onclick="navigateHome()"/>
+            <label for="slide-item-1"><span>Home</span></label>
+            
+            <!-- Item 2 -->
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" onclick="navigateSoftware()"/>
+            <label for="slide-item-2"><span>Software</span></label>
+            
+            <!-- Item 3 -->
+            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle" checked onclick="navigateMethodology()"/>
+            <label for="slide-item-3"><span>Metodologia</span></label>
+            
+            <!-- Item 4 -->
+            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle" onclick="navigateImages()"/>
+            <label for="slide-item-4"><span>Imagens</span></label>
+            
+            <div class="clear"></div>
+    
+            <!-- Bar -->
+            <div class="slider">
+                <div class="bar"></div>
+            </div>     
+        </nav>
+    
+        <img class="deviconimg" height="100" src="/Assets/dev-icon.svg">
+    </div>
+
+    <h1>Metodologia para implementação</h1>
+
+    <div class="stepsContainer">
+        <div class="divStep">
+            <span class="dot" style="background-color: #25BFC9;">
+                <p>1.</p>
+            </span>
+            <h2>Imagem binária</h2>
+            <h4>
+                Conversão da imagem original em uma imagem binária, que consiste em 
+                uma imagem onde cada pixel é representado apenas por um bit, ou seja, 
+                um pixel pode ser ou preto ou branco. Essa conversão ocorre para possibilitar a implementação do algoritmo distance transform.
+            </h4>
+        </div>
+        <div class="divStep">
+            <span class="dot" style="background-color: #25C9A1;">
+                <p>2.</p>
+            </span>
+            <h2>Distance transform</h2>
+            <h4>
+                Algoritmo aplicado em imagens binárias para mapear a distância entre cada ponto do objeto até o pixel
+                mais próximo do background da imagem, o que permite definir o centro
+                de cada um dos objetos.
+            </h4>
+        </div>
+        <div class="divStep">
+            <span class="dot" style="background-color: #76ADEE">
+                <p>3.</p>
+            </span>
+            <h2>Opening</h2>
+            <h4>
+                Processo de erosão seguido de dilatação dos objetos cujo intuito é remover os possíveis ruídos da imagem. 
+                A erosão consegue remover os ruídos, mas também acaba encolhendo os objetos, então posteriormente é realizada a 
+                dilatação para devolver a área perdida.
+            </h4>
+        </div>
+        <div class="divStep">
+            <span class="dot" style="background-color: #25BFC9;">
+                <p>4.</p>
+            </span>
+            <h2>Watershed</h2>
+            <h4>
+                Algoritmo esponsável  por detectar as bordas exatas de cada objeto, completando o 
+                processo de identificação e permitindo que as bordas sejam desenhadas na imagem original. 
+                Esse algoritmo ajuda na detecção de objetos que se tocam ou se sobrepõem na figura.
+            </h4>
+        </div>
+        <div class="divStep">
+            <span class="dot" style="background-color: #25C9A1;">
+                <p>5.</p>
+            </span>
+            <h2>Contagem</h2>
+            <h4>
+                Após todos os outros processos, resta contar quantos objetos foram identificados pelo
+                sistema. Isso é feito somando os marcadores encontrados e devolvendo o resultado para 
+                o usuário.
+            </h4>
+        </div>
+    </div>
+</body>
+
+</html>
