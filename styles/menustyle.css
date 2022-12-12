@@ -1,11 +1,10 @@
 @media screen and (max-device-width: 700px) {
-  body {
-    margin-left: 10px;
-    margin-right: 10px;
-  }  
-
   .container{
     display: none;
+  }
+
+  .phoneMenuContainer{
+    margin-left: 40px;
   }
 }
 

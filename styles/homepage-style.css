@@ -1,14 +1,9 @@
 @media screen and (max-device-width: 700px) {
-  body {
-    margin-left: 20px;
-    margin-right: 20px;
-  }  
-
   .divText{
     max-width: none;
     min-width: 300px;
     width: auto;
-    margin-left: 60px;
+    margin-left: 70px;
   }
 }
 
