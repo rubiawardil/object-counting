@@ -1,3 +1,14 @@
+@media screen and (max-device-width: 700px) {
+  .divContainer{
+    margin-left: -40px;
+  }
+
+  .stepsContainer{
+    margin-left: -20px;
+    margin-right: -50px;
+  }
+}
+
 h1{
     font-family: Arial, sans-serif;
     margin-top: 45px;
